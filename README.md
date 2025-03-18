@@ -14,7 +14,7 @@ A system for extracting structured information from markdown notes and building 
 
 ```bash
 # Clone the repository
-git clone https://github.com/heinzdoofenshmirtz-inator/notes-mgr.git
+git clone https://github.com/dustyp/notes-mgr.git
 cd notes-mgr
 
 # Install dependencies
