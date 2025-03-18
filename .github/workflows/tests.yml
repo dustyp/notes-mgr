@@ -2,7 +2,7 @@ name: Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, test/*, fix/* ]
   pull_request:
     branches: [ main ]
 
@@ -26,12 +26,7 @@ jobs:
         flake8 . --count --max-complexity=10 --max-line-length=127 --statistics
     - name: Type check with mypy
       run: |
-        mypy scripts/
+        mypy scripts/ --install-types --non-interactive
     - name: Test with pytest
       run: |
-        pytest --cov=scripts
-    - name: Upload coverage report
-      uses: actions/upload-artifact@v3
-      with:
-        name: coverage-report
-        path: htmlcov/
+        python -m pytest
