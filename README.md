@@ -1,6 +1,6 @@
 # Notes Manager Knowledge Graph
 
-A system for extracting structured information from markdown notes and building a knowledge graph.
+A system for extracting structured information from markdown notes and building a knowledge graph for easy querying and analysis.
 
 ## Features
 
